@@ -31,19 +31,12 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 //variables
-  upper = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
-  lower = 'abcdefghijklmnopqrstuvwxyz';
-  number = '0123456789';
-  special = '!$%^&*()-=+[]{};#:@~,./<>?'; 
-
-
-var password = [];
-var numberOfCharacters;
-var useLowercaseLetters;
-var useUppercaseLetters;
-var useNumbers;
-var useSpecialCharacters;
-var choices;
+ var upper = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split("");
+ var lower = 'abcdefghijklmnopqrstuvwxyz'.split("");
+ var number = '0123456789'.split("");
+ var special = '!$%^&*()-=+[]{};#:@~,./<>?'.split(""); 
+ var newPassword = "";
+ var choices = [];
 // Write password to the #password input
 function writePassword(){
 
@@ -64,39 +57,10 @@ function writePassword(){
       useSpecialCharacters = confirm("Do you want to include special charecters?");
     }
 
-    //if else statements for combinations of charector types
-    
-    //if upperCase, LowerCase, Number & Special Charector 
-
-    //if upperCase, LowerCase, Number
-
-    //if upperCase, LowerCase, Special Character
-
-    //if uppercase, number, special character
-
-    //if lowerCase, Special Character, Number
-
-    //if lowerCase and upperCase
-
-    //if lowerCase and number
-
-    //if lowerCase and special characters
-
-    //if uppercase and number
-
-    //if uppercase and special characters
-
-    //if special character and number 
-
-    //if lowerCase
-
-    //if upperCase
-
-    //if number
-
-    //if special character
-
   };
+
+  //use for loop to iterate through the length of password 
+  //use math random function to move items from charector array to password
 
 
   var passwordText = document.querySelector("#password");
