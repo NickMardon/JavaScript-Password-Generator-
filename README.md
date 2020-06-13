@@ -1,5 +1,4 @@
 # JavaScript-Password-Generator-
-JavaScript Password Generator
 
 ## User Directions
 
