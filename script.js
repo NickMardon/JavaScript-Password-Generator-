@@ -12,7 +12,7 @@ var generateBtn = document.querySelector("#generate");
   //ask user for number of charectors
   numberOfCharacters = prompt("How many charecters do you want your password to be? Minimum 8 Maximum 128");
 //check for a valid entry
-  if (numberOfCharacters === NaN){
+  if (isNaN(numberOfCharacters)===true){
     alert("You must enter a numeric value");
   } else if(numberOfCharacters < 8 || numberOfCharacters > 128){
     alert("You must enter a numeric value betweeen 8 and 128");
